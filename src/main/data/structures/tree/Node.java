@@ -1,16 +1,16 @@
 package data.structures.tree;
 
-public class BinaryTreeNode {
+public class Node {
 
     private int data;
-    private BinaryTreeNode left;
-    private BinaryTreeNode right;
+    private Node left;
+    private Node right;
 
-    public BinaryTreeNode(int data) {
+    public Node(int data) {
         this.data = data;
     }
 
-    public BinaryTreeNode(int data, BinaryTreeNode left, BinaryTreeNode right) {
+    public Node(int data, Node left, Node right) {
         this.data = data;
         this.left = left;
         this.right = right;
@@ -24,19 +24,19 @@ public class BinaryTreeNode {
         this.data = data;
     }
 
-    public BinaryTreeNode getLeft() {
+    public Node getLeft() {
         return left;
     }
 
-    public void setLeft(BinaryTreeNode left) {
+    public void setLeft(Node left) {
         this.left = left;
     }
 
-    public BinaryTreeNode getRight() {
+    public Node getRight() {
         return right;
     }
 
-    public void setRight(BinaryTreeNode right) {
+    public void setRight(Node right) {
         this.right = right;
     }
 }
